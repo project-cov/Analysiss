@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19: Global Impact</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url(covid.jpg);
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color:#020000;
+            text-align: center;
+        }
+        .underlined-title1 {
+         text-decoration: underline;
+        }
+        p {
+            color: #0b0b0bfa;
+            line-height: 1.6;
+        }
+        .data-analysis {
+            margin-top: 30px;
+        }
+        .data-analysis h2 {
+            color: #000000;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .underlined-title2 {
+         text-decoration: underline;
+        }
+        .underlined-title3 {
+         text-decoration: underline;
+        }
+        .underlined-title4 {
+         text-decoration: underline;
+        }
+        .underlined-title5 {
+         text-decoration: underline;
+        }
+        .underlined-title6 {
+         text-decoration: underline;
+        }
+        .data-analysis p {
+            color: #020202;
+        }
+
+        .data-analysis h3 {
+            color: #000000;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto; /* 0 top/bottom margin, auto left/right margin */
+        }
+        /* Add more styles as needed */
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1 class="underlined-title1">Exploring the Consequences of COVID-19</h1>
+
+    <div class="data-analysis">
+        <h2 class="underlined-title2">Introduction</h2>
+        <p>The COVID-19 pandemic has had a profound impact on the world, affecting nearly every facet of human life. This page will explore the far-reaching consequences of COVID-19 on global health and the economy. Moreover, the economic fallout from the pandemic has been staggering, with millions of jobs lost globally as businesses shuttered their doors or scaled back operations in response to the economic downturn. Unemployment rates soared, leaving many individuals and families grappling with financial insecurity and uncertainty about the future. In response to these challenges, this project entails developing an empirical visualisation about different decision-making metrics that is caused by COVID 19 pandemic.  </p>
+        
+        <h2 class="underlined-title5">Data Abstraction</h2>
+        <p>To comprehensively explore the consequences of COVID-19 on global health and the economy, COVID-19 data was employed. These were the variables present in the dataset: </p>
+        <ul>
+            <li>ISO_code of the incidence</li> 
+            <li>Continent of the incidence</li> 
+            <li>Location of the incidence</li>
+            <li>Date of the incidence</li>
+            <li>Total number of cases of the incidence </li>
+            <li>New number of cases of the incidence </li>
+            <li>New number of cases of smoothed of the incidence</li>
+            <li>Total number of deaths of the incidence</li>
+            <li>New number of deaths of the incidence</li>
+            <li>New number of deaths smoothed of the incidence </li>
+        </ul>
+        
+
+        <h2 class="underlined-title3">Exploratory Data Analysis</h2>
+        <p>The dataset underwent preprocessing and cleaning using Python libraries, where missing and null values were removed. Data transformation in Python involved three main categories: Manipulating data to remove outliers, performing real-time data engineering for feature selection, and transforming data values. In the COVID-19 dataset, transformation components include extracting features like mortality rate, hospitalization numbers, and new COVID-19 cases, normalizing data by grouping elements by continent, and encoding categorical data.</p>
+
+
+        <h2 class="underlined-title4">Result for Analysis</h2>
+        <p>In order to provide a deeper understanding of the consequences of COVID-19 on global health and the economy, we turn to data visualizations. Visual representations of data offer a powerful means of conveying complex information in an accessible and intuitive manner. Through data visualizations, we can uncover patterns, trends, and insights that might otherwise remain obscured within vast datasets.
+
+            In this segment, we will explore a series of interactive and static data visualizations that illuminate key aspects of the COVID-19 pandemic's impact. These visualizations will draw upon a diverse array of data sources, including epidemiological data, economic indicators, public health measures, and socioeconomic variables. By leveraging the power of visual storytelling, we aim to provide a comprehensive and nuanced portrayal of the multifaceted consequences of COVID-19 on a global scale.</p>
+        
+        <h3>Tableau Visualisation on number of mortality per continent</h3>
+            <img src="tab.jpg" alt="Tableau Visualisation on number of mortality per continent">
+        <ul>
+            <li> Europe has a high number of deaths, people there are more likely to make risk-averse decisions, such as avoiding travel or public gatherings.</li>
+            <li>Conversely, Oceania has a low number of deaths, people there are less likely to take precautions.</li>
+            <li>Continents such as Africa, South America, Asia, North America might be experiencing a situation where the pandemic's impact isn't at its most severe. This could lead to different decision-making patterns compared to continents with very high or very low death rates.</li>
+        </ul>
+
+        <h3>Tableau Visualisation on the number of covid 19 related death in a year</h3>
+        <img src="tab2.jpg" alt="Tableau Visualisation on the number of covid 19 related death in a year">
+        <ul>
+            <li> Across most continents, the new deaths per million have declined significantly since the beginning of 2021. This suggests that the number of new COVID-19 deaths has decreased considerably over time.</li>
+            <li>Throughout the timeframe, Africa has consistently had the lowest new death rates.</li>
+            <li>These continents; Americas and Europe, show a similar pattern with a sharp decline in new deaths per million starting from around mid-2021.</li>
+            <li>These continents; Southeast Asia and Western Pacific, show a more gradual decline in new deaths per million compared to the Americas and Europe. However, they also reached a lower level of new deaths per million by March 2023.</li>
+            <li>The widespread rollout of COVID-19 vaccines likely played a significant role in reducing deaths. Vaccines can help prevent serious illness, hospitalization, and death from COVID-19.</li>
+            <li>Advancements in treatments for COVID-19 may have also contributed to a lower death rate.</li>
+            <li>Measures like mask-wearing, social distancing, and lockdowns might have helped slow the spread of the virus and reduced deaths.</li>
+        </ul>
+
+        <h3>Pie chart Visualisation on PowerBI showing new COVID 19 cases per continent</h3>
+        <img src="piechart.jpg" alt="Pie Graph Visualisation on PowerBI showing new COVID 19 cases per continent">
+        <ul>
+            <li>Europe makes up the largest portion of new COVID 19 cases at 44.5%, which is almost half of the total cases.</li>
+            <li>North America comes in second at 28.76%, which is a little less than a third of the total cases.</li>
+            <li>Asia makes up 11.88% of the new COVID 19 cases </li>
+            <li>South America contributes 5.91% of the new COVID 19 cases.</li>
+            <li>Africa has the lowest percentage of the new COVID 19 cases at 2.36%.</li>
+            <li>Oceania makes up a very small portion of new COVID 19 cases at 1.69%</li>
+        </ul>
+
+        <h3>Line Graph Visualisation of confirmed COVID 19 cases</h3>
+        <img src="line.jpg" alt="Line Graph Visualisation of confirmed COVID 19 cases">
+        <ul>
+            <li>This indicates a significant decrease in the number of new cases reported from January to March. This could be attributed to several factors, such as Increased Vaccination Rates, Lockdowns, mask mandates, and social distancing measures implemented earlier could have effectively curbed the spread of the virus.</li>
+            <li>The graph shows a gradual rise in new cases starting from October. This could be due to Vaccine effectiveness might decrease over time, leading to breakthrough infections and people might be less likely to follow public health guidelines strictly, increasing transmission risks.</li>
+        </ul>
+
+        <h3>Using matplotlib library in Python to plot the top 10 countries with high testing rate against world population</h3>
+        <img src="total.jpg" alt="Using matplotlib to plot the top 10 countries with high testing rate against world population">
+        <ul>
+            <li>Cyprus and Greece have the highest and lowest testing rates respectively among the top 10 countries.</li>
+            <li>Cyprus likely conducted a larger number of tests relative to their population size. This might indicate a more aggressive approach to identifying COVID-19 cases.</li>
+            <li>Countries like Isreal, Czechia and Greece might have conducted fewer tests compared to their population. This doesn't necessarily mean they have fewer cases, but it could suggest a different testing strategy.</li>
+        </ul>
+
+        <h3>Bar chart representation of the Total COVID 19 cases against Countries</h3>
+        <img src="cases.jpg" alt="Bar chart representation of the Total COVID 19 cases against Countries">
+        <ul>
+            <li>United States reported a larger number of total COVID 19 cases. This could be due to factors like population size, testing strategies, or the severity of outbreaks.</li>
+            <li>Countries with shorter bars like United Kingdom, Peru, Chile, Spain, Italy, Iran might have reported fewer total cases. However, this doesn't necessarily mean they have had fewer infections. It could be due to limited testing, different reporting methods.</li>
+        </ul>
+
+
+        <h2 class="underlined-title6">References</h2>
+            <p>Bin Uzayr,S. (2023). Introduction to Conquering JavaScript, 1-59. <a href="https://doi.org/10.1201/9781003356608-1">Link 1</a></p>
+            <p>Iglesias,M. (2019). Introduction to data visualizations with D3.js. Pro D3.js, 1-12. <a href="https://doi.org/10.1007/978-1-4842-5203-1_1">Link 2</a></p>
+            <p>Iglesias,M. (2019). D3.js code encapsulation and APIs. Pro D3.js, 25-46. <a href="https://doi.org/10.1007/978-1-4842-5203-1_3">Link 3</a></p>
+            <p>Svekis,L. (2020). JavaScript objects. Modern JavaScript Fundamentals. <a href= "https://doi.org/10.1007/978-1-4842-5847-7_20">Link 4</a></p>    
+        
+    
+    </div>
+</div>
+
+</body>
+</html>
